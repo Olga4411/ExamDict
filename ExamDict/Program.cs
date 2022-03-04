@@ -11,8 +11,12 @@ namespace ExamDict
     {
         static void Main(string[] args)
         {
-            RU_EN_Dict dictionary = new RU_EN_Dict();
-            
+            Dict r = new Dict("Test");
+            r.AddWord("cat","кошка");
+            r.AddWord("dog", "собака");
+            Console.WriteLine(r);
+            Console.ReadLine();
         }
+        
     }
 }
